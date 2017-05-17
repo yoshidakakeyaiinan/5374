@@ -503,8 +503,9 @@ $(function() {
       if (accordion_height<130) {accordion_height=130;};
     }
     var styleHTML = "";
-    var accordionHTML = "";
-    // ◇ var accordionHTML = '   <div class="aname"> <div class="areaname"><p>' + area_name + "</p></div> </div>";
+    //var accordionHTML = "";
+    var accordionHTML = '   <div class="aname"> <div class="areaname"><p>' + area_name + "</p></div> </div> ";
+
     //アコーディオンの分類から対応の計算を行います。
     for (var i in areaModel.trash) {
       var trash = areaModel.trash[i];
