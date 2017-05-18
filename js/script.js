@@ -534,7 +534,13 @@ $(function() {
             }
 
             target_tag += '<li style="list-style:none;"><div>' + target.name + "</div>";
-            target_tag += '<div class="note">' + target.notice + "</div></li>";
+            // ◇スペース付加
+            //target_tag += '<div class="note">' + target.notice + "</div></li>";
+            if (target.notice.length > 0) {
+                target_tag += '<div class="note">&ensp;' + target.notice + "</div></li>";
+            } else {
+                target_tag += '<div class="note">' + target.notice + "</div></li>";
+            }
           }
 
           target_tag += "</ul>";
